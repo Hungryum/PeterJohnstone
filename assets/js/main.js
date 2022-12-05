@@ -297,6 +297,15 @@
 						.on('click', function() {
 							location.hash = '';
 						});
+				
+				// Back.
+				if($this.hasClass('project')) {
+					$('<div class="close back">Back</div>')
+						.appendTo($this)
+						.on('click', function() {
+							location.hash = '#projects';
+						});
+				}
 
 				// Prevent clicks from inside article from bubbling.
 					$this.on('click', function(event) {
